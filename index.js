@@ -42,7 +42,7 @@ function createRock(x) {
     if (top<400){
       window.requestAnimationFrame(moveRock)      
     }
-  if (checkCollision) {
+  if (checkCollision===true) {
     endGame()
   }
     /**
