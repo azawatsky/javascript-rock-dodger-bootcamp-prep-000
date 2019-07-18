@@ -35,17 +35,16 @@ function createRock(x) {
   function moveRock() {
     rock.style.top = `${top += 2}px`;
     if (checkCollision(rock)===true) {
-//      endGame;()
-      clearInterval(gameInterval);
+      endGame();
     } else if (top<400){
       window.requestAnimationFrame(moveRock) ;     
     } else {
       GAME.removeChild(rock);
     }
   }
-  window.requestAnimationFrame(moveRock)   
-  ROCKS.push(rock)
-  return rock
+  window.requestAnimationFrame(moveRock); 
+  ROCKS.push(rock);
+  return rock;
 }
 
 /**
@@ -55,7 +54,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  document.getElementsByClassName
+  clearInterval(gameInterval);
   alert("YOU LOSE!");
 }
 
