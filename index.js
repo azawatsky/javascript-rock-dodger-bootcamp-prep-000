@@ -61,7 +61,7 @@ function createRock(x) {
 function endGame() {
   var rockArray = document.getElementsByClassName('rock')
   while(rockArray[0]) {
-    rockArray[0].removeChild(rockArray[0]);
+    rockArray[0].document.removeChild(rockArray[0]);
   }
   alert("YOU LOSE!");
 }
