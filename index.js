@@ -65,11 +65,9 @@ function moveDodger(e) {
   switch (e.which) {
     case LEFT_ARROW:
       moveDodgerLeft();
-      console.log("moved left");
       break;
     case RIGHT_ARROW:
       moveDodgerRight();
-      console.log("moved right");
       break;
   }
 }
