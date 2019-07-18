@@ -62,18 +62,16 @@ function endGame() {
 }
 
 function moveDodger(e) {
-  document.addEventListener('keydown', function(e) {
-    switch (e.which) {
-      case LEFT_ARROW:
-        moveDodgerLeft();
-        console.log("moved left");
-        break;
-      case RIGHT_ARROW:
-        moveDodgerRight();
-        console.log("moved right");
-        break;
-    }
-  });
+  switch (e.which) {
+    case LEFT_ARROW:
+      moveDodgerLeft();
+      console.log("moved left");
+      break;
+    case RIGHT_ARROW:
+      moveDodgerRight();
+      console.log("moved right");
+      break;
+  }
 }
 
 function moveDodgerLeft() {
