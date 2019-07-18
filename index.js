@@ -65,7 +65,6 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  document.getElementById('game').removeChild(rock);
   alert("YOU LOSE!")
 }
 
