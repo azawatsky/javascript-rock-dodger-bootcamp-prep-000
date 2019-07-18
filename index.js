@@ -43,7 +43,7 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
-    x.style.top = `${top += 2}px`
+    rock.style.top = `${top += 2}px`
     if (top<400){
       window.requestAnimationFrame(moveRock)      
     }
@@ -62,7 +62,7 @@ function createRock(x) {
      * we should remove the rock from the DOM
      */
   }
-
+window.requestAnimationFrame(moveRock)   
   // We should kick of the animation of the rock around here
 
   // Add the rock to ROCKS so that we can remove all rocks
