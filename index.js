@@ -20,7 +20,7 @@ function checkCollision(rock) {
     const rockLeftEdge = positionToInteger(rock.style.left);
     const rockRightEdge = rockLeftEdge + 20;
     if (rockLeftEdge<dodgerLeftEdge && rockRightEdge>dodgerLeftEdge || rockLeftEdge>dodgerLeftEdge && rockRightEdge<dodgerRightEdge || rockLeftEdge<dodgerRightEdge && rockRightEdge>dodgerRightEdge) {
-      return true
+      return true;
     }
   }
 }
@@ -55,6 +55,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
+  document.querySelector('div.rock').style.display='none';
   alert("YOU LOSE!");
 }
 
@@ -62,12 +63,12 @@ function moveDodger(e) {
   document.addEventListener('keydown', function(e) {
     switch (e.which) {
       case LEFT_ARROW:
-        moveDodgerLeft()
-        console.log("moved left")
+        moveDodgerLeft();
+        console.log("moved left");
         break;
       case RIGHT_ARROW:
-        moveDodgerRight()
-        console.log("moved right")
+        moveDodgerRight();
+        console.log("moved right");
         break;
     }
   });
