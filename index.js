@@ -68,6 +68,7 @@ function moveDodger(e) {
       moveDodgerLeft();
       break;
     case RIGHT_ARROW:
+      e.preventDefault()
       moveDodgerRight();
       break;
   }
