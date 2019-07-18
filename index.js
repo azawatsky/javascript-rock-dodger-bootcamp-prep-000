@@ -64,12 +64,14 @@ function endGame() {
 
 function moveDodger(e) {
   document.addEventListener('keydown', function(e) {
-    if (e.which===LEFT_ARROW){
-      moveDodgerLeft()
+    switch (e.which) {
+      case LEFT_ARROW:
+        moveDodgerLeft()
+        break;
+      case RIGHT_ARROW:
+        moveDodgerRight()
+        break;
     }
-    if (e.which===RIGHT_ARROW){
-      moveDodgerRight()
-    }    
   })
 }
 
@@ -93,7 +95,7 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
   var leftNumbers = DODGER.style.left.replace('px', '')
   var left = parseInt(leftNumbers, 10)
-  if (left <360) {
+  if (left <360 0) {
     DODGER.style.left = `${left + 4}px`
   }
 
