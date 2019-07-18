@@ -66,13 +66,10 @@ function moveDodger(e) {
     e.preventDefault()
     e.stopPropagation()
   }
-  switch (e.which) {
-    case LEFT_ARROW:
-      moveDodgerLeft();
-      break;
-    case RIGHT_ARROW:
+  if (e.which===LEFT_ARROW) {
+    moveDodgerLeft();
+  } else if (e.which===RIGHT_ARROW) {
       moveDodgerRight();
-      break;
   }
 }
 
