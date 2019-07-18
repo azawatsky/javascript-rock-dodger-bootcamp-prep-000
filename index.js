@@ -73,10 +73,11 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  left = positionToInteger(DODGER.style.left);
-  if (left > 0) {
-    DODGER.style.left = `${left - 4}px`;
-  }
+  window.requestAnimationFrame() {
+    left = positionToInteger(DODGER.style.left);
+    if (left > 0) {
+      DODGER.style.left = `${left - 4}px`;
+    }
   
 /*if (top<400){
       window.requestAnimationFrame(moveRock)      
