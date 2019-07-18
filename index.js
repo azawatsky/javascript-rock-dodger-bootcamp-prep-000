@@ -36,7 +36,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
   var top = 0
   rock.style.top = top
-  document.getElementById('game').append(rock)
+  document.getElementById('game').appendChild(rock)
 
   /**
    * This function moves the rock. (2 pixels at a time
