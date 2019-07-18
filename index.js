@@ -65,7 +65,8 @@ function endGame() {
 function moveDodger(e) {
   document.addEventListener('keydown', function(e) {
     switch (e.which) {
-      case 37: moveDodgerLeft()
+      case 37:
+        moveDodgerLeft()
       break;
     }
   })
