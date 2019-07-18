@@ -73,8 +73,7 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  var leftNumbers = DODGER.style.left.replace('px', '');
-  var left = parseInt(leftNumbers, 10);
+  left = positionToInteger(DODGER.style.left);
   if (left > 0) {
     DODGER.style.left = `${left - 4}px`;
     console.log(left);
@@ -91,8 +90,7 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-  var leftNumbers = DODGER.style.left.replace('px', '');
-  var left = parseInt(leftNumbers, 10);
+  left = positionToInteger(DODGER.style.left);
   if (left <360) {
     DODGER.style.left = `${left + 4}px`;
   }
