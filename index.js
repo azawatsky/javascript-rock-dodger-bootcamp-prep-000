@@ -39,12 +39,13 @@ function createRock(x) {
   document.getElementById('game').appendChild(rock)
   function moveRock() {
     rock.style.top = `${top += 2}px`
+    if (checkCollision(rock)===true) {
+      endGame()
+    } else if {
     if (top<400){
       window.requestAnimationFrame(moveRock)      
     }
-  if (checkCollision(rock)===true) {
-    endGame()
-  }
+
 
 
     /**
