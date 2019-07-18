@@ -59,7 +59,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  delete gameInterval;
+  gameInterval="";
 
   alert("YOU LOSE!");
 }
