@@ -62,21 +62,15 @@ function endGame() {
 }
 
 function moveDodger(e) {
-  if ([LEFT_ARROW, RIGHT_ARROW].indexOf(code) > -1) {
+  if ([LEFT_ARROW, RIGHT_ARROW].indexOf(e.which) > -1) {
     e.preventDefault()
     e.stopPropagation()
   }
-
-
   switch (e.which) {
     case LEFT_ARROW:
-      e.preventDefault();
-//      e.stopPropogation();
       moveDodgerLeft();
       break;
     case RIGHT_ARROW:
-      e.preventDefault();
-//      e.stopPropogation();
       moveDodgerRight();
       break;
   }
