@@ -80,9 +80,9 @@ function moveDodgerLeft() {
     DODGER.style.left = `${left - 4}px`
   }
   
-if (top<400){
+/*if (top<400){
       window.requestAnimationFrame(moveRock)      
-    }
+    }/
 
   /**
    * This function should move DODGER to the left
