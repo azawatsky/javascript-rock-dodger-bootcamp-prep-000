@@ -26,20 +26,21 @@ function checkCollision(rock) {
 }
 
 function createRock(x) {
-  const rock = document.createElement('div')
-  rock.className = 'rock'
-  rock.style.left = `${x}px`
-  var top = 0
-  rock.style.top = top
-  GAME.appendChild(rock)
+  const rock = document.createElement('div');
+  rock.className = 'rock';
+  rock.style.left = `${x}px`;
+  var top = 0;
+  rock.style.top = top;
+  GAME.appendChild(rock);
   function moveRock() {
-    rock.style.top = `${top += 2}px`
+    rock.style.top = `${top += 2}px`;
     if (checkCollision(rock)===true) {
-//      endGame()
+//      endGame;()
+      clearInterval(gameInterval);
     } else if (top<400){
-      window.requestAnimationFrame(moveRock)      
+      window.requestAnimationFrame(moveRock) ;     
     } else {
-      GAME.removeChild(rock)
+      GAME.removeChild(rock);
     }
   }
   window.requestAnimationFrame(moveRock)   
