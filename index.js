@@ -64,11 +64,13 @@ function endGame() {
 function moveDodger(e) {
   switch (e.which) {
     case LEFT_ARROW:
-      e.preventDefault()
+      e.preventDefault();
+      e.stopPropogatin();
       moveDodgerLeft();
       break;
     case RIGHT_ARROW:
-      e.preventDefault()
+      e.preventDefault();
+      e.stopPropogatin();
       moveDodgerRight();
       break;
   }
