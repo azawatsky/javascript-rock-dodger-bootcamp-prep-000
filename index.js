@@ -65,22 +65,14 @@ function endGame() {
 function moveDodger(e) {
   document.addEventListener('keydown', function(e) {
     switch (e.which) {
-      case 37:
+      case LEFT_ARROW:
         moveDodgerLeft()
         break;
-      case 39:
+      case RIGHT_ARROW:
         moveDodgerRight()
         break;
     }
   })
-  // implement me!
-  /**
-   * This function should call `moveDodgerLeft()`
-   * if the left arrow is pressed and `moveDodgerRight()`
-   * if the right arrow is pressed. (Check the constants
-   * we've declared for you above.)
-   * And be sure to use the functions declared below!
-   */
 }
 
 function moveDodgerLeft() {
@@ -101,6 +93,13 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
+  var rightNumbers = DODGER.style.left.replace('px', '')
+  var right = parseInt(leftNumbers, 10)
+  if (left < 360) {
+    DODGER.style.left = `${left - 4}px`
+  }
+
+
   // implement me!
   /**
    * This function should move DODGER to the right
