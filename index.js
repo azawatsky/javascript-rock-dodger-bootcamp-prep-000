@@ -59,10 +59,6 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  delete gameInterval;
-  while (ROCKS[0]){
-    GAME.removeChild(ROCKS[0])
-  }
   alert("YOU LOSE!");
 }
 
