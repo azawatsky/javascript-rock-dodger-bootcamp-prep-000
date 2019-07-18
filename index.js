@@ -36,7 +36,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
   var top = 0
   rock.style.top = top
-  document.getElementById('game').appendChild(rock)
+  GAME.appendChild(rock)
   function moveRock() {
     rock.style.top = `${top += 2}px`
     if (checkCollision(rock)===true) {
@@ -60,7 +60,9 @@ function createRock(x) {
  */
 function endGame() {
   gameInterval="";
-
+  while (ROCKS[0]){
+    
+  }
   alert("YOU LOSE!");
 }
 
