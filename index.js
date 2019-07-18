@@ -44,7 +44,7 @@ function createRock(x) {
     } else if (top<400){
       window.requestAnimationFrame(moveRock)      
     } else {
-      
+      document.getElementById('game').removeChild(rock)
     }
 
 
