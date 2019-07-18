@@ -67,7 +67,10 @@ function moveDodger(e) {
     switch (e.which) {
       case 37:
         moveDodgerLeft()
-      break;
+        break;
+      case 39:
+        moveDodgerRight()
+        break;
     }
   })
   // implement me!
