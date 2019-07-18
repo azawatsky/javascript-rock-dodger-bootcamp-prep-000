@@ -64,13 +64,7 @@ function endGame() {
 
 function moveDodger(e) {
   document.addEventListener('keydown', function(e) {
-    switch (e.which) {
-      case LEFT_ARROW:
-        moveDodgerLeft()
-        break;
-      case RIGHT_ARROW:
-        moveDodgerRight()
-        break;
+    if ()
     }
   })
 }
