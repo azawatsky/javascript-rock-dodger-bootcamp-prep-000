@@ -37,16 +37,14 @@ function createRock(x) {
   var top = 0
   rock.style.top = top
   document.getElementById('game').appendChild(rock)
-
-  /**
-   * This function moves the rock. (2 pixels at a time
-   * seems like a good pace.)
-   */
   function moveRock() {
     rock.style.top = `${top += 2}px`
     if (top<400){
       window.requestAnimationFrame(moveRock)      
     }
+  if (checkCollision===true) {
+    endGame
+  }
     /**
      * If a rock collides with the DODGER,
      * we should call endGame()
