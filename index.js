@@ -64,8 +64,8 @@ function endGame() {
 
 function moveDodger(e) {
   document.addEventListener('keydown', function(e) {
-    switch (e.which === 37) {
-      moveDodgerLeft()
+    switch (e.which) {
+      case 0: moveDodgerLeft()
     }
   })
   // implement me!
