@@ -65,12 +65,12 @@ function moveDodger(e) {
   switch (e.which) {
     case LEFT_ARROW:
       e.preventDefault();
-      e.stopPropogation();
+//      e.stopPropogation();
       moveDodgerLeft();
       break;
     case RIGHT_ARROW:
       e.preventDefault();
-      e.stopPropogation();
+//      e.stopPropogation();
       moveDodgerRight();
       break;
   }
