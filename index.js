@@ -55,7 +55,6 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  document.querySelector('div.rock').style.display='none';
   alert("YOU LOSE!");
 }
 
