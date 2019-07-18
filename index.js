@@ -44,7 +44,7 @@ function createRock(x) {
     } else if (top<400){
       window.requestAnimationFrame(moveRock)      
     } else {
-      document.getElementById('game').removeChild(rock)
+      GAME.removeChild(rock)
     }
   }
   window.requestAnimationFrame(moveRock)   
@@ -61,7 +61,7 @@ function createRock(x) {
 function endGame() {
   gameInterval="";
   while (ROCKS[0]){
-    
+    ROCKS[0].GAME.removeChild(ROCKS[0])
   }
   alert("YOU LOSE!");
 }
